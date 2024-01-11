@@ -1,9 +1,6 @@
 import json
 import os
 
-ruta_generos= '../data/generos.json'
-diccionario_generos = {}
-
 lista_generos = []
 lista_actores = []
 lista_formatos = []
@@ -26,10 +23,6 @@ def crear_genero():
             print("El genero ha sido guardado exitosamente")
     except Exception as e:
         print(f"Error al guardar el genero: {e}")
-
-def verificar_genero():
-    genero_a_verificar=input("Ingrese el genero: ")
-    
 
 def leer_lista_generos():
     print("Lista de generos: ")
@@ -94,7 +87,7 @@ def crea_pelicula():
     print()
     try:
         generos_pelicula=int(input())
-        for i in diccionario_generos[i]:
+        for i in lista_generos:
             if generos_pelicula == i:
                 pelicula = {
                 'id': id_pelicula,
