@@ -86,7 +86,7 @@ def crea_pelicula():
     leer_lista_generos()
     print()
     try:
-        generos_pelicula=int(input())
+        generos_pelicula=int(input("ingrese el nombre del genero: "))
         for i in lista_generos:
             if generos_pelicula == i:
                 pelicula = {
